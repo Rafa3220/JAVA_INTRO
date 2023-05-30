@@ -1,9 +1,9 @@
-/*5
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejerc.pkg1;
+package ejerc7;
 
 import java.util.Scanner;
 
@@ -11,19 +11,20 @@ import java.util.Scanner;
  *
  * @author Rafael
  */
-public class Ejerc1 {
+public class Ejerc7 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-          Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese 2 números: ");
-        int numero = leer.nextInt();
-        int numero_2 = leer.nextInt();
-        int resultado = numero + numero_2;
-        System.out.println("La suma de los números es: " + resultado);
+              int numero;
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        numero = leer.nextInt();
+        if (numero % 2 == 0) {
+            System.out.println("Es par");
+        } else {
+            System.out.println("Es impar");
     }
     
 }
